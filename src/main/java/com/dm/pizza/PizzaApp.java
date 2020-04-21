@@ -13,11 +13,18 @@ import java.util.Scanner;
  * 30 cm for 20 zl
 **/
 
-//TODO o start with Builder, int size instead of seperat overbuilt class
+//TODO o start with Builder, int size instead of seperate overbuilt class
+    //FIXME doubled logic - I have to change and simplify
 
 
 public class PizzaApp {
     public static void main(String[] args) {
+
+        Pizza pizza3 = new Pizza.PizzaBuilder(24)
+                .setCheese(true)
+                .setHam(true)
+                .setMashroom(false)
+                .build();
 
         Order order3 = new OrderBuilder(3l).setSummary("2 pizzas, with ham, mashrooms, cheese").setDone(true).build();
         System.out.println(order3);
