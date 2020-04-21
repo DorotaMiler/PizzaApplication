@@ -27,7 +27,7 @@ public class Pizza {
         }
 
         Pizza build(){
-            return new Pizza(this);
+            return new Pizza(size,cheese,ham,mashroom);
         }
     }
 
