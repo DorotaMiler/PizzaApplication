@@ -1,6 +1,11 @@
 package com.dm.pizza;
 
 public class Pizza {
+
+    //TODO check if below amendment is in lines with builder: this in static inner class
+    public Pizza(PizzaBuilder builder) {
+    }
+
     static class PizzaBuilder {
         private final int size;
         private boolean cheese;
@@ -27,7 +32,7 @@ public class Pizza {
         }
 
         Pizza build(){
-            return new Pizza(size,cheese,ham,mashroom);
+            return new Pizza(this);
         }
     }
 
