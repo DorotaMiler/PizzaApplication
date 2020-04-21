@@ -26,6 +26,8 @@ public class PizzaApp {
                 .setMashroom(false)
                 .build();
 
+        //TODO deliver the pizza
+
         Order order3 = new OrderBuilder(3l).setSummary("2 pizzas, with ham, mashrooms, cheese").setDone(true).build();
         System.out.println(order3);
 
