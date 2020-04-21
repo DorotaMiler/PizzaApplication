@@ -1,6 +1,12 @@
 package com.dm.pizza;
 
 public class Pizza {
+    private int size;
+    private PizzaPrice price;
+    private boolean cheese;
+    private boolean ham;
+    private boolean mashroom;
+    private PizzaDiameter diameter;
 
     //TODO check if below amendment is in lines with builder: this in static inner class
     public Pizza(PizzaBuilder builder) {
@@ -31,18 +37,10 @@ public class Pizza {
             return this;
         }
 
-        Pizza build(){
+        Pizza build() {
             return new Pizza(this);
         }
     }
-
-    private int size;
-    private PizzaPrice price;
-    private boolean cheese;
-    private boolean ham;
-    private boolean mashroom;
-    private PizzaDiameter diameter;
-
 
     public Pizza() {
     }
