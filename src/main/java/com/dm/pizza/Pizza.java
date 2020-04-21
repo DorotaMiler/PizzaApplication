@@ -3,8 +3,11 @@ package com.dm.pizza;
 public class Pizza {
 
     private PizzaPrice price;
+    private boolean cheese;
+    private boolean ham;
+    private boolean mashroom;
     private PizzaDiameter diameter;
-    private PizzaSize size;
+    private int size;
 
 
     public Pizza() {

@@ -13,6 +13,8 @@ import java.util.Scanner;
  * 30 cm for 20 zl
 **/
 
+//TODO o start with Builder, int size instead of seperat overbuilt class
+
 
 public class PizzaApp {
     public static void main(String[] args) {
