@@ -17,17 +17,20 @@ import java.util.Scanner;
 public class PizzaApp {
     public static void main(String[] args) {
 
-        System.out.println("Hallo! Which pizza size would you like to order: "+"\n small,"+"\n medium,"+" or big?");
-        Scanner scan = new Scanner(System.in);
-        PizzaSize chosenPizzaSize = PizzaSize.valueOf(scan.nextLine().toUpperCase());
-        if (chosenPizzaSize == null){
-            System.out.println("No pizza's size chosen."+"\nPlease choose again from above mentioned available sizes.");
-        } else {
-            switch(chosenPizzaSize){
-                case SMALL:
-                    PizzaSize pizzaSize = PizzaSize.SMALL;
-                    break;
-                case "medium":
+        Order order3 = new OrderBuilder(3l).setSummary("2 pizzas, with ham, mashrooms, cheese").setDone(true).build();
+        System.out.println(order3);
+
+//        System.out.println("Hallo! Which pizza size would you like to order: "+"\n small,"+"\n medium,"+" or big?");
+//        Scanner scan = new Scanner(System.in);
+//        PizzaSize chosenPizzaSize = PizzaSize.valueOf(scan.nextLine().toUpperCase());
+//        if (chosenPizzaSize == null){
+//            System.out.println("No pizza's size chosen."+"\nPlease choose again from above mentioned available sizes.");
+//        } else {
+//            switch(chosenPizzaSize){
+//                case SMALL:
+//                    PizzaSize pizzaSize = PizzaSize.SMALL;
+//                    break;
+//                case "medium":
 
 
 

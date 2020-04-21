@@ -8,7 +8,7 @@ public class OrderBuilder {
     private boolean done = false;
     private Date dueDate;
 
-    public OrderBuilder(long id, String summary, boolean done, Date dueDate){
+    public OrderBuilder(long id){
 
     }
 
@@ -27,5 +27,7 @@ public class OrderBuilder {
         return this;
     }
 
-    public
+    public Order build(){
+        return new Order(id, summary,done,dueDate);
+    }
 }
